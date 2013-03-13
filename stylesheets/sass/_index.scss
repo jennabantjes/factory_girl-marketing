@@ -1,0 +1,117 @@
+//***********************************************************************************//
+// Index
+//***********************************************************************************//
+
+.container {
+	@include outer-container;
+}
+
+section.top-bar {
+	@include grunge;
+	
+		.thought-shadow img {
+			width: 100%;
+		}
+
+		section.wrapper {
+			@include clearfix;
+			position: relative;
+
+			.hero {
+				@include hero;
+				@include span-columns(4);
+			}
+
+			.intro-information {
+				@include span-columns(12);
+				@include logo;
+				float: right;
+
+			  h1.main-title {
+			    font-size: $font-size * 6.75;
+			    margin-right: 40px;
+			    text-align: right;
+				}
+
+				.sub-title {
+					@include span-columns (11);
+					@include shift (1);
+					color: $accent-color;
+					padding: ($padding) ($padding * 5.7) 0 0;
+					text-align: right;
+				}
+
+				.bullet-features{
+					@include span-columns(10);
+					@include shift(1);
+
+					ul {
+						float: right;
+						padding: $padding 0 ($padding * 2) 0;
+
+						li {
+							font-size: $font-size * 1.1;
+							line-height: $line-height * 2.4;
+
+							.icon-star {
+								font-size: $font-size * .75;
+								letter-spacing: 4px;
+								opacity: 0.5;
+							}
+						}
+					}
+
+					.read-documentation {
+						@include button;
+						@include span-columns(6);
+						@include shift(6);
+						background-color: $button-color-primary;
+						height: 55px;
+						font-size: $font-size * 1.2;
+						margin-bottom: 40px;
+						padding-top: $padding * 1.5;
+					}
+				}
+			}
+		}
+	}
+
+hr.accent {
+  background-color: $accent-color;
+  border: 0;
+  height: 6px;
+  margin: 0;
+}
+
+.installation-wrapper {
+	@include span-columns(8);
+	@include shift(2);
+	padding: ($padding * 12) 0;
+
+	.easy-installation {
+		@include span-columns(6 of 8);
+		margin-right: 0;
+	}
+	
+	.view-on-Github {
+		@include span-columns(2 of 8);
+		padding-top: $padding * 4;
+		text-align: right;
+	}
+
+	.markup-wrapper {
+		@include span-columns(8 of 8);
+
+		.markup {
+			@include markup-container;
+		}	
+
+		h2 {
+			padding-top: $padding * 4;
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,70 @@
+---
+layout: default
+title: factory_girl DSL for declaring and using factories
+keyword: documentation
+meta_keywords: web design, web development, DSL, factories, gem, ruby, rails, boston, documentation
+meta_description: factory_girl is a fixtures replacement with a straightforward definition syntax, support for multiple build strategies (saved instances, unsaved instances, attribute hashes, and stubbed objects), and support for multiple factories for the same class (user, admin_user, and so on), including factory inheritance.
+---
+<header class="top-bar">
+  <div class="container">
+    <div class="logo">
+      <h1 class="main-title"><span class="icon-star"></span>facto<span>r</span>y<span>_</span>girl<span class="icon-star"></span></h1>
+    </div>
+  </div>
+</header>
+
+<section class="documentation">
+  <div class="container">
+    <aside class="links">
+      <ul>
+        <li><a href="#">Update your gemfile</a></li>
+        <li><a href="#">Using without bundler</a></li>
+        <li><a href="#">Defining factories</a></li>
+        <li><a href="#">Using factories</a></li>
+        <li><a href="#">Lazy attributes</a></li>
+        <li><a href="#">Aliases</a></li>
+        <li><a href="#">Dependent attributes</a></li>
+        <li><a href="#">Transient attributes</a></li>
+        <li><a href="#">Associations</a></li>
+        <li><a href="#">Inheritence</a></li>
+        <li><a href="#">Sequences</a></li>
+        <li><a href="#">Traits</a></li>
+        <li><a href="#">Callbacks</a></li>
+        <li><a href="#">Modifying factories</a></li>
+        <li><a href="#">Building or creating multiple records</a></li>
+        <li><a href="#">Custom construction</a></li>
+        <li><a href="#">Custom strategies</a></li>
+        <li><a href="#">Custom callbacks</a></li>
+        <li><a href="#">Custom methods to persist objects</a></li>
+        <li><a href="#">ActiveSupport instrumentation</a></li>
+      </ul>
+    </aside>
+
+    <article class="explanation">
+      <h1>Update your gemfile</h1>
+      <p>If you’re using Rails, you’ll need to change the required version of factory_girl_rails:</p>
+      <div class="markup">
+        {% highlight powershell %}
+          gem "factory_girl_rails", "~> 4.0"
+        {% endhighlight %}
+      </div>
+      <p>If you’re not using Rails, you’ll just have to change the required version of factory_girl:</p>
+      <div class="markup">
+        {% highlight powershell %}
+          gem "factory_girl
+        {% endhighlight %}
+      </div>
+      <p>JRuby users: FactoryGirl works with JRuby starting with 1.6.7.2 (latest stable, as per July 2012). JRuby has to be used in 1.9 mode, for that, use JRUBY_OPTS environment variable:</p>
+      <div class="markup">
+        {% highlight powershell %}
+          export JRUBY_OPTS=--1.9
+        {% endhighlight %}
+      </div>
+      <p>Once your Gemfile is updated, you’ll want to update your bundle.</p>
+      <div class="hero-transparent">
+        <img src="../images/hero.png" alt="Strong factory_girl hero" />
+      </div>
+    </article>
+
+  </div>
+<section>

@@ -1,0 +1,41 @@
+// Font
+///////////////////////////////////////////////////////////////////////////
+// Font-face
+@include font-face(SourceSansPro, '../../vendor/fonts/Source_Sans_Pro/SourceSansPro-Light-webfont', 200);
+@include font-face(SourceSansPro, '../../vendor/fonts/Source_Sans_Pro/SourceSansPro-Regular-webfont', 400);
+@include font-face(SourceSansPro, '../../vendor/fonts/Source_Sans_Pro/SourceSansPro-Semibold-webfont', 600);
+
+@include font-face(ChunkFiveRegular, '../../vendor/fonts/Chunk_Five/Chunkfive-webfont');
+
+@include font-face(Fontello, '../../vendor/fonts/Fontello/fontello');
+
+// Font-family
+$logo-font-family: 'ChunkFiveRegular';
+$base-font-family: 'SourceSansPro';
+
+// Font-weight
+$light: 200;
+$regular: 400;
+$semibold: 500;
+$bold: 600;
+
+// Font-size
+$font-size: 1em;
+$line-height: 1em;
+
+// Colors
+//////////////////////////////////////////////////////////////////////////
+$background-color: #FAF4C5;
+$logo-color: #0C376A;
+$disclaimer-color: #666666;
+$button-color-primary: #EBBA10;
+$accent-color: #FA0303;
+$border-color: #dddddd;
+$markup-border-color: #EAB704;
+$markup-background-color: #F7F5DA;
+$footer-color: #F7F7F7;
+
+// Misc
+///////////////////////////////////////////////////////////////////////////
+$padding: 10px;
+$z-index: 9999;
