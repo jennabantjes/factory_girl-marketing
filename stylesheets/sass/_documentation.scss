@@ -5,11 +5,31 @@
 header.top-bar{
   @include grunge;
   border-bottom: 1px solid $border-color;
+  position: relative;
   
   div.logo {
     @include logo;
+    @include span-columns(6);
+    display: inline-block;
     font-size: $font-size * 1.7;
     margin: 30px 0;
+    padding-left: $padding;
+  }
+
+  div.thought-shadow {
+    @include shift(1);
+    @include span-columns(5);
+
+    img {
+      @include transform(scaleX(-1));
+      width: 100%;
+    }
+  }
+
+  .back-link {
+    @include shift(4);
+    @include span-columns(2 of 4);
+    text-align: right;
   }
 }
 
@@ -23,12 +43,11 @@ section.documentation {
     li {
       border-bottom: 1px solid #e3e3e3;
       line-height: $line-height * 2;
-      font-weight: $semibold;
       margin-right: 20px;
       
       a:link, a:visited {
         //@include animation(color, 0.1s linear);
-        border-left: $border-color 4px solid;
+        border-right: $border-color 4px solid;
         color: #000;
         display: block;
         padding-left: $padding * 2;
@@ -36,11 +55,21 @@ section.documentation {
         @include transition(border-left, 0.1 ease-in-out);
 
         &:hover, &:active {
-          border-left: $accent-color 4px solid;
+          border-right: $accent-color 4px solid;
           color: $accent-color;
           text-decoration: none;
         }
+      }
+
+      h3 {
+        line-height: 1em;
+        font-weight: $semibold;
+        padding: 10px 0;
       } 
+    }
+
+    li:last-child {
+      border-bottom: 0px;
     }
   }
 
