@@ -5,14 +5,18 @@ footer {
     padding: ($padding * 2) 0;
   }
     article  {
-      @include shift (2);
+      @include shift (1);
+      @include span-columns(8);
+      display: inline-block;
     
       span {
-        @include span-columns(2);
-      }
-    
-      .overflow-columns {
+        @include span-columns(1.6 of 8);
+        display: inline-block;
         margin-top: 27px;
+
+        &:first-child {
+          margin-top: 0;
+        }
       }
     }
 
@@ -25,7 +29,7 @@ footer {
       height: 50%;
       opacity: 0.6;
       width: 50%;
-      padding: ($padding * 4) ($padding);
+      padding: ($padding * 2.5) ($padding) 0 ($padding);
       
       &:hover {
         opacity: 1;
@@ -37,19 +41,24 @@ footer {
     }
   }
 
-  .copyright,  .disclaimer {
-      @include span-columns(5);
-      color: $disclaimer-color;
-      font-size: $font-size * .8;
-      line-height: $line-height * .8;
-      padding: ($padding * 6) 0;
+  .copyright {
+    color: $disclaimer-color;
+    font-size: $font-size * .8;
+    line-height: $line-height * .8;
+    padding: ($padding * 6) 0;
+    text-align: center;
 
-      p {
-        padding-right: $padding;
-      }
+    span {
+      @include shift(3);
+      @include span-columns(6);
+    }
+
+    p {
+      line-height: 0.9;
+    }
   }
 
-  h5 {
+ h5 {
     font-family: $base-font-family;
     font-size: $font-size * 1;
     font-weight: $bold;

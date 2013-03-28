@@ -27,10 +27,12 @@ $line-height: 1em;
 //////////////////////////////////////////////////////////////////////////
 $background-color: #FAF4C5;
 $logo-color: #0C376A;
-$disclaimer-color: #666666;
-$button-color-primary: #EBBA10;
-$accent-color: #FA0303;
+$disclaimer-color: #cccccc;
+$button-color-primary: #f3be16;
+$button-color-primary-hover: darken($button-color-primary, 3%);
+$accent-color: #e22b19;
 $border-color: #dddddd;
+$border-radius: 5px;
 $markup-border-color: #EAB704;
 $markup-background-color: #F7F5DA;
 $footer-color: #F7F7F7;
