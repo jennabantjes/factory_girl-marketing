@@ -12,7 +12,7 @@ footer {
       span {
         @include span-columns(1.6 of 8);
         display: inline-block;
-        margin-top: 27px;
+        margin-top: ($margin * 2.7);
 
         &:first-child {
           margin-top: 0;

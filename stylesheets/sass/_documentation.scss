@@ -9,27 +9,10 @@ header.top-bar{
   
   div.logo {
     @include logo;
-    @include span-columns(6);
-    display: inline-block;
-    font-size: $font-size * 1.7;
-    margin: 30px 0;
+    @include span-columns(4);
+    font-size: ($font-size * 1.35);
+    margin: ($margin * 3) 0;
     padding-left: $padding;
-  }
-
-  div.thought-shadow {
-    @include shift(1);
-    @include span-columns(5);
-
-    img {
-      @include transform(scaleX(-1));
-      width: 100%;
-    }
-  }
-
-  .back-link {
-    @include shift(4);
-    @include span-columns(2 of 4);
-    text-align: right;
   }
 }
 
@@ -38,12 +21,12 @@ section.documentation {
 
   aside.links {
     @include span-columns(4);
-    margin-top: 50px;
+    margin-top: ($margin * 5);
     
     li {
       border-bottom: 1px solid #e3e3e3;
       line-height: $line-height * 2;
-      margin-right: 20px;
+      margin-right: ($margin * 2);
       
       a:link, a:visited {
         //@include animation(color, 0.1s linear);
@@ -76,16 +59,14 @@ section.documentation {
   article.explanation {
     @include span-columns(8);
     min-height: 750px;
-    margin-top: 20px;
+    margin-top: ($margin * 2);
     padding: 0 ($padding * 2) ($padding * 50) 0;
-    // padding-bottom: $padding * 50;
-    // padding-right: $padding * 2;
     position: relative;
 
     h1 {
       border-bottom: $border-color 1px solid;
       color: $accent-color;
-      margin: 20px 0;
+      margin: ($margin * 2) 0;
     }
 
     p {

@@ -19,11 +19,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $light;
 }
 
-h1 {
-  font-size: $font-size * 3;
-}
-
-h2 {
+h1, h2 {
   font-size: $font-size * 2;
 }
 
@@ -64,11 +60,6 @@ li {
 code {
   font-family: $monospace;
   font-size: $font-size * 1;
-}
-
-.icon-star:before { 
-  content: '\2605'; 
-  vertical-align: middle;
 }
 
 $selection: rgba($accent-color, .3);
