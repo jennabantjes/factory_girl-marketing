@@ -2,11 +2,7 @@
 // Styles for Documentation
 /////////////////////////////////////////
 
-header.top-bar{
-  @include grunge;
-  border-bottom: 1px solid $border-color;
-  position: relative;
-  
+header {  
   div.logo {
     @include logo;
     @include span-columns(4);

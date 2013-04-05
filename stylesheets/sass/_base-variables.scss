@@ -25,17 +25,23 @@ $line-height: 1em;
 
 // Colors
 //////////////////////////////////////////////////////////////////////////
-$background-color: #FAF4C5;
+$light-yellow: #F7F5DA;
+$dark-yellow: #FDB43E;
+$blue: #3181c0;
+$red: #e22b19;
+$lightest-gray: #f7f7f7;
+
+$background-color: $lightest-gray;
 $logo-color: #0C376A;
 $disclaimer-color: #cccccc;
-$button-color-primary: #f3be16;
-$button-color-primary-hover: darken($button-color-primary, 3%);
-$accent-color: #e22b19;
+$button-color-primary: $dark-yellow;
+$button-color-primary-hover: darken($button-color-primary, 5%);
+$accent-color: $red;
 $border-color: #dddddd;
 $border-radius: 5px;
-$markup-border-color: #EAB704;
-$markup-background-color: #F7F5DA;
-$footer-color: #F7F7F7;
+$markup-border-color: $dark-yellow;
+$markup-background-color: $light-yellow;
+$footer-color: $lightest-gray;
 
 // Misc
 ///////////////////////////////////////////////////////////////////////////
