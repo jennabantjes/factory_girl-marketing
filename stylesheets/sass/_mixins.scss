@@ -58,10 +58,12 @@
 }
 
 @mixin markup-container {
-  background-color: $markup-background-color;
   border: 1px solid $markup-border-color;
   font-family: monospace;
   font-size: $font-size * .9;
   margin-bottom: 10px;
-  padding: ($padding * 1.5) ($padding * 3);
+  
+  .highlight {
+    padding: ($padding * 1.5) ($padding * 3);
+  }
 }
