@@ -1,13 +1,13 @@
 // Font
 ///////////////////////////////////////////////////////////////////////////
 // Font-face
-@include font-face(SourceSansPro, '../../vendor/fonts/Source_Sans_Pro/SourceSansPro-Light-webfont', 200);
-@include font-face(SourceSansPro, '../../vendor/fonts/Source_Sans_Pro/SourceSansPro-Regular-webfont', 400);
-@include font-face(SourceSansPro, '../../vendor/fonts/Source_Sans_Pro/SourceSansPro-Semibold-webfont', 600);
+@include font-face(SourceSansPro, '../../factory_girl-marketing/vendor/fonts/Source_Sans_Pro/SourceSansPro-Light-webfont', 200);
+@include font-face(SourceSansPro, '../../factory_girl-marketing/vendor/fonts/Source_Sans_Pro/SourceSansPro-Regular-webfont', 400);
+@include font-face(SourceSansPro, '../../factory_girl-marketing/vendor/fonts/Source_Sans_Pro/SourceSansPro-Semibold-webfont', 600);
 
-@include font-face(ChunkFiveRegular, '../../vendor/fonts/Chunk_Five/Chunkfive-webfont');
+@include font-face(ChunkFiveRegular, '../../factory_girl-marketing/vendor/fonts/Chunk_Five/Chunkfive-webfont');
 
-@include font-face(Fontello, '../../vendor/fonts/Fontello/fontello');
+@include font-face(Fontello, '../../factory_girl-marketing/vendor/fonts/Fontello/fontello');
 
 // Font-family
 $logo-font-family: 'ChunkFiveRegular';
