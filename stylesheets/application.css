@@ -782,7 +782,7 @@ header section.wrapper {
     .installation-wrapper .markup-wrapper:last-child {
       margin-right: 0; }
     .installation-wrapper .markup-wrapper .markup {
-      background-color: #f7f5da;
+      background-color: #fcf9d5;
       border: 1px solid #fdb43e;
       font-family: monospace;
       font-size: 0.9em;
@@ -898,7 +898,7 @@ section.documentation {
     section.documentation article.explanation p {
       padding: 10px 0; }
     section.documentation article.explanation .markup {
-      background-color: #f7f5da;
+      background-color: #fcf9d5;
       border: 1px solid #fdb43e;
       font-family: monospace;
       font-size: 0.9em;
